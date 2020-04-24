@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/factor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/let_s_find_the_factors"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:enabled="false"
+        android:text="@string/next"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/number"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:autofillHints=""
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="@string/enter_your_number_greater_than_10"
+        android:inputType="number"
+        android:maxLength="7"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/factor" />
+
+    <TextView
+        android:id="@+id/Score_Streak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/score_streak"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/factor"
+        app:layout_constraintStart_toStartOf="@+id/factor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <TextView
+        android:id="@+id/Score_Streak_no"
+        android:layout_width="19dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/_Score_Streak_0"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/factor"
+        app:layout_constraintStart_toEndOf="@+id/Score_Streak"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <TextView
+        android:id="@+id/Highest_Streak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highest_streak"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/factor"
+        app:layout_constraintStart_toStartOf="@+id/factor"
+        app:layout_constraintTop_toBottomOf="@+id/Score_Streak"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/Highest_Streak_No"
+        android:layout_width="21dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/_HighestStreak_0"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/factor"
+        app:layout_constraintStart_toEndOf="@+id/Highest_Streak"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

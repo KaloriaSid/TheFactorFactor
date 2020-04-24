@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">The Factor Factor</string>
+    <string name="choose_your_option">Choose your Option:</string>
+    <string name="next">Next</string>
+    <string name="_00_30">00:30</string>
+    <string name="let_s_find_the_factors">Let\'s find the factors</string>
+    <string name="sorestreak">SoreStreak:</string>
+    <string name="highest_streak">Highest Streak:</string>
+    <string name="score_streak">Score Streak:</string>
+    <string name="not_found_1">Not Found</string>
+    <string name="not_found_2">Not Found</string>
+    <string name="not_found_3">Not Found</string>
+    <string name="not_found_4">Not Found</string>
+    <string name="time_left">Time Left:</string>
+    <string name="_num0">0</string>
+    <string name="_HighestStreak_0">0</string>
+    <string name="_Score_Streak_0">0</string>
+    <string name="enter_your_number_greater_than_10">Enter your number (greater than 10)</string>
+</resources>
